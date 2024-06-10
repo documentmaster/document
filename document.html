@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="dist/styles.css" />
+  </head>
+  <body>
+    <h1 class="dark-blue">ESTADO DEL TRÁMITE DEL DOCUMENTO DE IDENTIDAD</h1>
+    <div class="breadcrumb">
+      <a href="index.html">Inicio &nbsp; /&nbsp; <span class="active">Consultar</span></a>
+    </div>
+    <div class="box" id="user-table-data">
+      El documento <strong id="documentNumber">1081699930</strong> presenta las siguientes solicitudes: <br /><br />
+      <div class="table">
+        <div class="item">
+          <strong>NO. DE PREPARACIÓN <span id="preparationNumber">???</span></strong>
+        </div>
+        <div class="item">
+          FECHA <br />
+          <span id="day">???</span> de <span id="month">???</span> de <span id="year">???</span>
+        </div>
+        <div class="item">
+          OFICINA <br />
+          <span id="office">???</span>
+        </div>
+        <div class="item">
+          <strong
+            >Su trámite se encuentra en verificación de información, validación y elaboración, etapas necesarias para la expedición de su documento de
+            identidad, proceso normal de producción. Por favor vuelva a realizar la consulta en los próximos días para validar el avance del
+            documento.</strong
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="box" id="without-procedure-front">
+      Su solicitud del Documento <strong id="documentNumber2">1081699930</strong> no se encuentra en Trámite.<br /><br />
+      Si solicitó el Trámite de su documento y el mismo no se refleja en esta consulta, por favor vuelva a consultar en los próximos días para
+      verificar el estado de su documento.<br />
+    </div>
+    <br /><br /><br />
+    <br /><br />
+    <div class="footer"></div>
+  </body>
+  <script src="dist/index.js"></script>
+</html>

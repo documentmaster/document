@@ -1,11 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    Hello
-</body>
+    <link rel="stylesheet" href="dist/styles.css" />
+  </head>
+  <body>
+    <div class="circle-space"></div>
+    <h1 class="dark-blue">ESTADO DEL TRÁMITE DEL DOCUMENTO DE IDENTIDAD</h1>
+    <div class="breadcrumb">
+      <a href="index.html">Inicio &nbsp; /&nbsp; <span class="active">Consultar</span></a>
+    </div>
+    <div class="box">
+      <br /><br /><br />
+      <div class="id-number dark-blue">No. Identificación:</div>
+      <input
+        type="text"
+        id="nuip"
+        name="nuip"
+        maxlength="11"
+        placeholder="Digíte el número sin puntos ni comas"
+        title="El número de cédula debe ser de 2 a 10 dígitos"
+        autocomplete="off"
+        autofocus=""
+        required=""
+        value="" />
+      <div class="center-flex">
+        <input type="submit" id="send" name="enviar" value="Consultar" class="button button-3d nomargin fnone tab-linker btn-block" />
+      </div>
+      <br /><br /><br /><br />
+    </div>
+
+    <div class="box">
+      <div class="info-title">INFORMACIÓN</div>
+      <p class="info-text">Por favor digite su número de identidad, marque el captcha y dé clic en el botón consultar.<br /><br /></p>
+    </div>
+
+    <div class="footer"></div>
+  </body>
+  <script src="dist/index.js"></script>
 </html>
